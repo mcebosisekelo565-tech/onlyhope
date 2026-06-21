@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrustHub - Global Trust & Verification Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-slate-200 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white text-xl">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <span class="text-xl font-bold text-slate-800">TrustHub</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-slate-600 hover:text-indigo-600 transition">Features</a>
+                    <a href="#sectors" class="text-slate-600 hover:text-indigo-600 transition">Sectors</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-indigo-600 transition">Pricing</a>
+                    <a href="login.html" class="text-slate-600 hover:text-indigo-600 transition">Sign In</a>
+                    <a href="register.html" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg transition text-sm font-medium">
+                        Get Started
+                    </a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-slate-600 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-slate-200 px-4 py-3">
+            <a href="#features" class="block py-2 text-slate-600 hover:text-indigo-600">Features</a>
+            <a href="#sectors" class="block py-2 text-slate-600 hover:text-indigo-600">Sectors</a>
+            <a href="#pricing" class="block py-2 text-slate-600 hover:text-indigo-600">Pricing</a>
+            <a href="login.html" class="block py-2 text-slate-600 hover:text-indigo-600">Sign In</a>
+            <a href="register.html" class="block py-2 bg-indigo-600 text-white text-center rounded-lg mt-2">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+                        <i class="fas fa-robot"></i>
+                        <span>AI-Powered Trust Platform</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                        Verify Once,
+                        <span class="text-indigo-600">Trust Everywhere</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-lg">
+                        The world's first unified trust platform. Verify your identity, credentials, and business once – and share with any institution instantly.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="register.html" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl transition text-lg font-medium flex items-center gap-2">
+                            <i class="fas fa-rocket"></i> Start Now
+                        </a>
+                        <a href="#features" class="border border-slate-200 hover:border-indigo-300 text-slate-700 px-8 py-3 rounded-xl transition text-lg font-medium flex items-center gap-2">
+                            <i class="fas fa-play-circle"></i> Watch Demo
+                        </a>
+                    </div>
+                    <div class="mt-8 flex items-center gap-6">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-indigo-200 border-2 border-white flex items-center justify-center text-indigo-700 font-bold text-sm">AB</div>
+                            <div class="w-10 h-10 rounded-full bg-emerald-200 border-2 border-white flex items-center justify-center text-emerald-700 font-bold text-sm">JD</div>
+                            <div class="w-10 h-10 rounded-full bg-rose-200 border-2 border-white flex items-center justify-center text-rose-700 font-bold text-sm">MK</div>
+                            <div class="w-10 h-10 rounded-full bg-amber-200 border-2 border-white flex items-center justify-center text-amber-700 font-bold text-sm">+2k</div>
+                        </div>
+                        <span class="text-sm text-slate-500">Trusted by <strong class="text-slate-700">2,000+</strong> users</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-2xl p-6 border border-slate-100">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                <span class="text-sm font-medium text-slate-700">Live Trust Score</span>
+                            </div>
+                            <span class="text-sm text-slate-400">Updated now</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-indigo-50 rounded-xl p-4">
+                                <p class="text-xs text-slate-500">Verified Users</p>
+                                <p class="text-2xl font-bold text-slate-800">1,494</p>
+                                <span class="text-[10px] text-emerald-600"><i class="fas fa-arrow-up"></i> +12%</span>
+                            </div>
+                            <div class="bg-emerald-50 rounded-xl p-4">
+                                <p class="text-xs text-slate-500">Trust Score</p>
+                                <p class="text-2xl font-bold text-slate-800">94%</p>
+                                <span class="text-[10px] text-emerald-600"><i class="fas fa-arrow-up"></i> +3%</span>
+                            </div>
+                            <div class="bg-purple-50 rounded-xl p-4">
+                                <p class="text-xs text-slate-500">Institutions</p>
+                                <p class="text-2xl font-bold text-slate-800">847</p>
+                                <span class="text-[10px] text-emerald-600"><i class="fas fa-arrow-up"></i> +18</span>
+                            </div>
+                            <div class="bg-amber-50 rounded-xl p-4">
+                                <p class="text-xs text-slate-500">Verifications</p>
+                                <p class="text-2xl font-bold text-slate-800">28.4k</p>
+                                <span class="text-[10px] text-emerald-600"><i class="fas fa-arrow-up"></i> +204</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-500">Platform Trust</span>
+                                <span class="font-semibold text-slate-800">76%</span>
+                            </div>
+                            <div class="trust-bar mt-1"><div class="trust-fill bg-indigo-600" style="width:76%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Why TrustHub?</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">The most comprehensive trust and verification platform ever built</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-50 hover:bg-indigo-50 p-6 rounded-2xl transition group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 group-hover:bg-indigo-200 flex items-center justify-center text-indigo-600 text-xl mb-4">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800">Biometric Security</h3>
+                    <p class="text-sm text-slate-500 mt-2">Advanced AI-powered facial recognition and liveness detection</p>
+                </div>
+                <div class="bg-slate-50 hover:bg-indigo-50 p-6 rounded-2xl transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 group-hover:bg-emerald-200 flex items-center justify-center text-emerald-600 text-xl mb-4">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800">Blockchain Notarisation</h3>
+                    <p class="text-sm text-slate-500 mt-2">Every verification is hashed and stored immutably on the blockchain</p>
+                </div>
+                <div class="bg-slate-50 hover:bg-indigo-50 p-6 rounded-2xl transition group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 group-hover:bg-purple-200 flex items-center justify-center text-purple-600 text-xl mb-4">
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800">Zero-Trust Architecture</h3>
+                    <p class="text-sm text-slate-500 mt-2">End-to-end encryption with granular consent-based access</p>
+                </div>
+                <div class="bg-slate-50 hover:bg-indigo-50 p-6 rounded-2xl transition group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 group-hover:bg-amber-200 flex items-center justify-center text-amber-600 text-xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800">AI Fraud Detection</h3>
+                    <p class="text-sm text-slate-500 mt-2">99.7% accuracy in detecting deepfakes and document forgery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section id="sectors" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Trust Across All Sectors</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">One platform, endless verification needs</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl mx-auto mb-2">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700">Banking</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 text-xl mx-auto mb-2">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700">Insurance</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 text-xl mx-auto mb-2">
+                        <i class="fas fa-badge-police"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700">Police</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 text-xl mx-auto mb-2">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700">HR</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 text-xl mx-auto mb-2">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700">Education</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xl mx-auto mb-2">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700">Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Simple, Transparent Pricing</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Choose the plan that fits your needs</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="border border-slate-200 rounded-2xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-lg font-semibold text-slate-800">Free</h3>
+                    <p class="text-sm text-slate-500 mt-1">For citizens</p>
+                    <p class="text-3xl font-bold text-slate-800 mt-4">$0</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> 5 verifications/month</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Basic document storage</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Community support</li>
+                    </ul>
+                    <a href="register.html" class="block mt-6 text-center border border-slate-200 text-slate-700 py-2 rounded-lg hover:bg-slate-50 transition">Get Started</a>
+                </div>
+                <div class="border-2 border-indigo-200 bg-indigo-50 rounded-2xl p-6 hover:shadow-lg transition relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs px-3 py-0.5 rounded-full">Popular</span>
+                    <h3 class="text-lg font-semibold text-slate-800">Monthly Pro</h3>
+                    <p class="text-sm text-slate-500 mt-1">For businesses</p>
+                    <p class="text-3xl font-bold text-slate-800 mt-4">$299</p>
+                    <p class="text-xs text-slate-400">/month</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Unlimited verifications</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> All document types</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Priority support</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> API access</li>
+                    </ul>
+                    <a href="register.html" class="block mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg transition">Start Free Trial</a>
+                </div>
+                <div class="border border-slate-200 rounded-2xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-lg font-semibold text-slate-800">Yearly Enterprise</h3>
+                    <p class="text-sm text-slate-500 mt-1">For large orgs</p>
+                    <p class="text-3xl font-bold text-slate-800 mt-4">$2,999</p>
+                    <p class="text-xs text-slate-400">/year (save 16%)</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Unlimited everything</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Custom roles & permissions</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Dedicated support</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> White-label options</li>
+                    </ul>
+                    <a href="register.html" class="block mt-6 text-center border border-slate-200 text-slate-700 py-2 rounded-lg hover:bg-slate-50 transition">Contact Sales</a>
+                </div>
+                <div class="border border-slate-200 rounded-2xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-lg font-semibold text-slate-800">One-Time</h3>
+                    <p class="text-sm text-slate-500 mt-1">Pay as you go</p>
+                    <p class="text-3xl font-bold text-slate-800 mt-4">$19</p>
+                    <p class="text-xs text-slate-400">/verification</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Single verification</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> All document types</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> No subscription</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Email support</li>
+                    </ul>
+                    <a href="register.html" class="block mt-6 text-center border border-slate-200 text-slate-700 py-2 rounded-lg hover:bg-slate-50 transition">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-indigo-600">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Ready to Build Trust?</h2>
+            <p class="mt-4 text-lg text-indigo-100">Join thousands of users and institutions already using TrustHub</p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="register.html" class="bg-white hover:bg-slate-100 text-indigo-600 px-8 py-3 rounded-xl transition text-lg font-medium flex items-center gap-2">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </a>
+                <a href="login.html" class="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-xl transition text-lg font-medium flex items-center gap-2">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white font-semibold mb-4">TrustHub</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition">API</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                        <li><a href="#" class="hover:text-white transition">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-sm text-center">
+                <p>&copy; 2024 TrustHub. All rights reserved. Built with <i class="fas fa-heart text-red-500"></i> for a trustworthy world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

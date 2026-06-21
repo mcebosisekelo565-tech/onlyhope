@@ -1,0 +1,15 @@
+trusthub/
+├── index.html              # Main entry point
+├── dashboard.html          # Admin dashboard
+├── citizen-dashboard.html  # Citizen/user dashboard
+├── login.html             # Login page
+├── register.html          # Registration page
+├── css/
+│   └── style.css          # Global styles
+├── js/
+│   ├── dashboard.js       # Dashboard functionality
+│   ├── citizen.js         # Citizen dashboard
+│   └── main.js            # Shared functionality
+└── assets/
+    ├── images/            # Placeholder images
+    └── icons/             # Custom icons
